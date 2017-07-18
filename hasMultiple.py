@@ -12,10 +12,6 @@ for filename in os.listdir(os.getcwd()):
 
 #print(fileList)
 
-#text = open("US_OH_Waterbody_Tappan_Lake.geojson", "r")
-
-#text = text.read()
-
 pattern = re.compile(".*geojson")
 
 bad = []
