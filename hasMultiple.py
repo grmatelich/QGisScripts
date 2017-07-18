@@ -28,8 +28,8 @@ for geo in fileList:
         words = temp.read()
         temp.close()
         
-        #file all instances of centroid_x in this case
-        match = re.findall('"centroid_x":([^,]+)', words)
+        #file all instances of 'some term' in this case
+        match = re.findall('"some term":([^,]+)', words)
     
         #if occurs multiple times, then add this to the list of corrupted files
         if len(match) > 1:
